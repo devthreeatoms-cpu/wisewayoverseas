@@ -27,10 +27,10 @@ export default function ContactPage() {
     e.preventDefault();
     
     // Create a message with all the form data
-    const message = `Hello, I would like to get in touch with VR Aspire Abroad.%0A%0AName: ${formData.name}%0AEmail: ${formData.email}%0AMobile: ${formData.mobile}%0ADestination: ${formData.destination || 'Not specified'}%0AMessage: ${formData.message || 'No message provided'}`;
+    const message = `Hello, I would like to get in touch with Wiseway Overseas.%0A%0AName: ${formData.name}%0AEmail: ${formData.email}%0AMobile: ${formData.mobile}%0ADestination: ${formData.destination || 'Not specified'}%0AMessage: ${formData.message || 'No message provided'}`;
     
     // Redirect to WhatsApp with the pre-filled message
-    window.open(`https://wa.me/918367628807?text=${message}`, '_blank');
+    window.open(`https://wa.me/919666604038?text=${message}`, '_blank');
   };
 
   return (
@@ -38,259 +38,173 @@ export default function ContactPage() {
       <NavigationBar />
       
       {/* Banner */}
-      <div className="pt-24 pb-16 bg-gradient-to-r from-secondary to-primary">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl font-bold text-center text-white">Contact Us</h1>
+      <div className="pt-32 pb-24 hero-gradient relative overflow-hidden">
+        <div className="absolute inset-0 bg-secondary/10 blur-[100px] pointer-events-none"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+          <h1 className="text-5xl font-bold text-white mb-4">Contact Us</h1>
+          <div className="w-24 h-1.5 bg-gold mx-auto rounded-full"></div>
         </div>
       </div>
 
       {/* Contact Section */}
-      <div className="py-16 flex-grow bg-gray-50">
+      <div className="py-24 flex-grow bg-bg-light">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div 
-            className="text-center mb-12"
+            className="text-center mb-20"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="text-3xl font-bold text-secondary mb-4">Get In Touch</h2>
-            <p className="text-gray-600 text-lg max-w-3xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">Get In Touch</h2>
+            <p className="text-gray-600 text-xl max-w-3xl mx-auto leading-relaxed">
               Have questions about studying abroad? Reach out to us and our expert counselors will guide you through the process.
             </p>
           </motion.div>
           
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             {/* Contact Information */}
             <motion.div
-              initial={{ opacity: 0, x: -20 }}
+              initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
+              className="space-y-12"
             >
-              <motion.div 
-                className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-96 mb-8 flex items-center justify-center"
-                initial={{ opacity: 0, scale: 0.95 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.2 }}
+              <a 
+                href="https://www.google.com/maps/search/?api=1&query=Gajams+Complex+Beside+Croma+Electronics+Srinagar+Colony+Pillar+NO.1549+Dilsukhnagar+Hyderabad+Telangana+India+Pincode-500060"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block relative group rounded-premium overflow-hidden shadow-premium border border-white h-[400px]"
               >
+                <div className="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-colors duration-300 z-10 flex items-center justify-center">
+                  <div className="bg-white/90 px-6 py-3 rounded-full text-primary font-bold shadow-lg transform translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                    View on Google Maps
+                  </div>
+                </div>
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d775.365!2d79.4239998!3d17.1647835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDA5JzUzLjIiTiA3OcKwMjUnMzUuNyJF!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.962!2d78.537!3d17.372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDIyJzE5LjIiTiA3OMKwMzInMTMuMiJF!5e0!3m2!1sen!2sin!4v1713692400000!5m2!1sen!2sin"
                   width="100%"
                   height="100%"
-                  className="rounded-xl"
+                  style={{ border: 0 }}
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
+                  className="pointer-events-none"
                 ></iframe>
-              </motion.div>
+              </a>
               
-              <motion.div 
-                className="space-y-6"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.3 }}
-              >
-                <div>
-                  <h3 className="text-xl font-bold text-secondary mb-3">Contact Information</h3>
-                  <p className="text-gray-600 mb-2">
-                    <span className="font-medium">Email:</span> vraspireabroad@gmail.com
-                  </p>
-                  <p className="text-gray-600 mb-2">
-                    <span className="font-medium">UK Phone/WhatsApp:</span> +447721163423
-                  </p>
-                  <p className="text-gray-600 mb-2">
-                    <span className="font-medium">India Phone/WhatsApp:</span> +918367528807
-                  </p>
-                  <p className="text-gray-600 mb-2">
-                    <span className="font-medium">Location:</span>{' '}
-                    <a 
-                      href="https://www.google.com/maps/place/17%C2%B009'53.2%22N+79%C2%B025'35.7%22E/@17.1647835,79.4239998,775m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d17.1647835!4d79.4265747?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="text-primary hover:underline"
-                    >
-                      View on Google Maps
-                    </a>
-                  </p>
-                </div>
-                
-                <div>
-                  <h3 className="text-xl font-bold text-secondary mb-3">Follow Us</h3>
-                  <div className="flex space-x-4">
-                    <motion.a 
-                      href="https://www.facebook.com/share/1E798HM5rN/" 
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="bg-primary text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-opacity-90 transition duration-300"
-                      whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
-                      whileTap={{ scale: 0.9 }}
-                    >
-                      <Image 
-                        src="/facebook.png" 
-                        alt="Facebook" 
-                        width={20} 
-                        height={20} 
-                      />
-                    </motion.a>
-                    <motion.a 
-                      href="https://www.instagram.com/vraspire_abroad?igsh=MXE4ZWg2Y3A1ZzViMA%3D%3D&utm_source=qr" 
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="bg-primary text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-opacity-90 transition duration-300"
-                      whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
-                      whileTap={{ scale: 0.9 }}
-                    >
-                      <Image 
-                        src="/instagram.png" 
-                        alt="Instagram" 
-                        width={20} 
-                        height={20} 
-                      />
-                    </motion.a>
-                    <motion.a 
-                      href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" 
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="bg-primary text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-opacity-90 transition duration-300"
-                      whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
-                      whileTap={{ scale: 0.9 }}
-                    >
-                      <Image 
-                        src="/linkedin.png" 
-                        alt="LinkedIn" 
-                        width={20} 
-                        height={20} 
-                      />
-                    </motion.a>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="bg-white p-8 rounded-premium shadow-premium border border-gray-50 group hover:border-gold transition-all duration-300">
+                  <div className="w-12 h-12 bg-gold-light text-gold rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                    <span className="text-xl">✉</span>
                   </div>
+                  <h3 className="text-xl font-bold text-primary mb-2">Email Us</h3>
+                  <p className="text-gray-600">teamwiseway@gmail.com</p>
                 </div>
-              </motion.div>
+
+                <div className="bg-white p-8 rounded-premium shadow-premium border border-gray-50 group hover:border-gold transition-all duration-300">
+                  <div className="w-12 h-12 bg-gold-light text-gold rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                    <span className="text-xl">📞</span>
+                  </div>
+                  <h3 className="text-xl font-bold text-primary mb-2">Call Us</h3>
+                  <p className="text-gray-600">+91 96666 04038</p>
+                </div>
+              </div>
             </motion.div>
             
             {/* Contact Form */}
             <motion.div
-              initial={{ opacity: 0, x: 20 }}
+              initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <motion.div 
-                className="bg-white rounded-lg shadow-md p-8 border border-gray-100"
-                initial={{ opacity: 0, scale: 0.95 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.2 }}
-              >
-                <h3 className="text-2xl font-bold text-secondary mb-6">Send us a Message</h3>
+              <div className="bg-white rounded-premium shadow-premium p-10 border border-gray-50">
+                <h3 className="text-2xl font-bold text-primary mb-8">Send us a Message</h3>
                 <form className="space-y-6" onSubmit={handleSubmit}>
-                  <motion.div
-                    initial={{ opacity: 0, y: 10 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.3, delay: 0.3 }}
-                  >
-                    <label htmlFor="name" className="block text-gray-700 font-medium mb-2">Name *</label>
-                    <input
-                      type="text"
-                      id="name"
-                      required
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary text-black"
-                      value={formData.name}
-                      onChange={handleInputChange}
-                    />
-                  </motion.div>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                      <label htmlFor="name" className="block text-primary font-bold text-sm uppercase tracking-wider mb-2">Name *</label>
+                      <input
+                        type="text"
+                        id="name"
+                        required
+                        placeholder="Your Name"
+                        className="w-full px-5 py-4 bg-bg-light border border-gray-100 rounded-premium focus:outline-none focus:ring-2 focus:ring-gold/20 focus:border-gold transition-all text-black"
+                        value={formData.name}
+                        onChange={handleInputChange}
+                      />
+                    </div>
+                    <div>
+                      <label htmlFor="email" className="block text-primary font-bold text-sm uppercase tracking-wider mb-2">Email *</label>
+                      <input
+                        type="email"
+                        id="email"
+                        required
+                        placeholder="Your Email"
+                        className="w-full px-5 py-4 bg-bg-light border border-gray-100 rounded-premium focus:outline-none focus:ring-2 focus:ring-gold/20 focus:border-gold transition-all text-black"
+                        value={formData.email}
+                        onChange={handleInputChange}
+                      />
+                    </div>
+                  </div>
                   
-                  <motion.div
-                    initial={{ opacity: 0, y: 10 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.3, delay: 0.4 }}
-                  >
-                    <label htmlFor="email" className="block text-gray-700 font-medium mb-2">Email *</label>
-                    <input
-                      type="email"
-                      id="email"
-                      required
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary text-black"
-                      value={formData.email}
-                      onChange={handleInputChange}
-                    />
-                  </motion.div>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                      <label htmlFor="mobile" className="block text-primary font-bold text-sm uppercase tracking-wider mb-2">Mobile *</label>
+                      <input
+                        type="tel"
+                        id="mobile"
+                        required
+                        placeholder="Your Mobile"
+                        className="w-full px-5 py-4 bg-bg-light border border-gray-100 rounded-premium focus:outline-none focus:ring-2 focus:ring-gold/20 focus:border-gold transition-all text-black"
+                        value={formData.mobile}
+                        onChange={handleInputChange}
+                      />
+                    </div>
+                    <div>
+                      <label htmlFor="destination" className="block text-primary font-bold text-sm uppercase tracking-wider mb-2">Destination</label>
+                      <select
+                        id="destination"
+                        className="w-full px-5 py-4 bg-bg-light border border-gray-100 rounded-premium focus:outline-none focus:ring-2 focus:ring-gold/20 focus:border-gold transition-all text-black appearance-none"
+                        value={formData.destination}
+                        onChange={handleInputChange}
+                      >
+                        <option value="">Select Country</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="australia">Australia</option>
+                        <option value="germany">Germany</option>
+                        <option value="ireland">Ireland</option>
+                        <option value="europe">Europe</option>
+                        <option value="dubai">Dubai</option>
+                        <option value="usa">USA</option>
+                      </select>
+                    </div>
+                  </div>
                   
-                  <motion.div
-                    initial={{ opacity: 0, y: 10 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.3, delay: 0.5 }}
-                  >
-                    <label htmlFor="mobile" className="block text-gray-700 font-medium mb-2">Mobile Number *</label>
-                    <input
-                      type="tel"
-                      id="mobile"
-                      required
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary text-black"
-                      value={formData.mobile}
-                      onChange={handleInputChange}
-                    />
-                  </motion.div>
-                  
-                  <motion.div
-                    initial={{ opacity: 0, y: 10 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.3, delay: 0.6 }}
-                  >
-                    <label htmlFor="destination" className="block text-gray-700 font-medium mb-2">Destination Country</label>
-                    <select
-                      id="destination"
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary text-black"
-                      value={formData.destination}
-                      onChange={handleInputChange}
-                    >
-                      <option value="">Select a country</option>
-                      <option value="uk">United Kingdom</option>
-                      <option value="australia">Australia</option>
-                      <option value="germany">Germany</option>
-                      <option value="ireland">Ireland</option>
-                      <option value="europe">Europe</option>
-                      <option value="dubai">Dubai</option>
-                      <option value="usa">USA</option>
-                    </select>
-                  </motion.div>
-                  
-                  <motion.div
-                    initial={{ opacity: 0, y: 10 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.3, delay: 0.7 }}
-                  >
-                    <label htmlFor="message" className="block text-gray-700 font-medium mb-2">Query / Message</label>
+                  <div>
+                    <label htmlFor="message" className="block text-primary font-bold text-sm uppercase tracking-wider mb-2">Message</label>
                     <textarea
                       id="message"
-                      rows={4}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary text-black"
+                      rows={5}
+                      placeholder="Tell us about your plans..."
+                      className="w-full px-5 py-4 bg-bg-light border border-gray-100 rounded-premium focus:outline-none focus:ring-2 focus:ring-gold/20 focus:border-gold transition-all text-black resize-none"
                       value={formData.message}
                       onChange={handleInputChange}
                     ></textarea>
-                  </motion.div>
+                  </div>
                   
                   <motion.button
                     type="submit"
-                    className="w-full bg-primary text-white font-bold py-3 px-4 rounded-md hover:bg-opacity-90 transition duration-300"
-                    initial={{ opacity: 0, y: 10 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.3, delay: 0.8 }}
-                    whileHover={{ scale: 1.02, transition: { duration: 0.2 } }}
+                    className="btn-primary w-full py-5 text-lg shadow-xl shadow-gold/20"
+                    whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                   >
-                    Send Message
+                    Send Message via WhatsApp
                   </motion.button>
                 </form>
-              </motion.div>
+              </div>
             </motion.div>
           </div>
         </div>

@@ -10,109 +10,106 @@ export default function CountriesPage() {
     {
       name: "UK 🇬🇧",
       description: "World-class universities, 2-year PSW visa, diverse courses.",
-      image: "/uk.webp"
+      image: "/images/uk.png"
     },
     {
       name: "Australia 🇦🇺",
       description: "Top-ranked universities, multicultural environment, strong job prospects.",
-      image: "/Australia 🇦🇺.png"
+      image: "/images/australia.png"
     },
     {
       name: "Germany 🇩🇪",
       description: "Low tuition, high-quality education, opportunities in engineering and IT.",
-      image: "/Germany.webp"
+      image: "/images/germany.png"
     },
     {
       name: "Ireland 🇮🇪",
       description: "Growing tech hub with post-study work opportunities.",
-      image: "/ireland.webp"
+      image: "/images/ireland.png"
     },
     {
       name: "Europe 🌍",
       description: "Affordable education options across leading European countries.",
-      image: "/Europe.webp"
+      image: "/images/europe.png"
     },
     {
       name: "Dubai 🇦🇪",
       description: "Safe, modern, and fast-growing education hub.",
-      image: "/Dubai.webp"
+      image: "/images/dubai.png"
     },
     {
       name: "USA 🇺🇸",
       description: "Premier universities with flexible study programs.",
-      image: "/usa.jpg"
+      image: "/images/usa.png"
     }
   ];
 
   return (
     <div className="min-h-screen bg-white flex flex-col">
       <NavigationBar />
-      
+
       {/* Banner */}
-      <div className="pt-24 pb-16 bg-gradient-to-r from-secondary to-primary">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl font-bold text-center text-white">Countries We Serve</h1>
+      <div className="pt-32 pb-24 hero-gradient relative overflow-hidden">
+        <div className="absolute inset-0 bg-secondary/10 blur-[100px] pointer-events-none"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+          <h1 className="text-5xl font-bold text-white mb-4">Study Destinations</h1>
+          <div className="w-24 h-1.5 bg-gold mx-auto rounded-full"></div>
         </div>
       </div>
 
-      {/* Countries Grid */}
-      <div className="py-16 flex-grow bg-gray-50">
-        <motion.div 
-          className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.6 }}
-        >
-          <motion.div 
-            className="text-center mb-12"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-          >
-            <h2 className="text-3xl font-bold text-secondary mb-4">Explore Global Education Opportunities</h2>
-            <p className="text-gray-600 text-lg max-w-3xl mx-auto">
-              Discover the best study abroad destinations and find the perfect fit for your academic and career goals.
+      {/* Countries Section */}
+      <div className="py-24 flex-grow">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-20">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">Explore Your Future Abroad</h2>
+            <p className="text-gray-600 text-xl max-w-3xl mx-auto leading-relaxed">
+              We guide you through the process of studying in some of the most prestigious education hubs in the world.
             </p>
-          </motion.div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {countries.map((country, index) => (
-              <motion.div
-                key={country.name}
-                className="bg-white rounded-lg shadow-md overflow-hidden border border-gray-100 hover:shadow-lg transition-shadow duration-300"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                whileHover={{ y: -5, transition: { duration: 0.2 } }}
-              >
-                <div className="relative h-48">
-                  <Image 
-                    src={country.image} 
-                    alt={country.name} 
-                    fill 
-                    className="object-cover"
-                  />
-                </div>
-                <div className="p-6">
-                  <h3 className="text-2xl font-bold text-secondary mb-3">{country.name}</h3>
-                  <p className="text-gray-600 mb-4">{country.description}</p>
-                  <motion.button 
-                    className="text-primary font-medium hover:underline"
-                    whileHover={{ x: 5, transition: { duration: 0.2 } }}
-                    onClick={() => window.open('https://docs.google.com/forms/d/1vHxcmILU7vUN5-fcUxMf7ARn2OQYCZVI3b4AASSkAHo/viewform?ts=68d18637', '_blank')}
-                  >
-                    Learn More →
-                  </motion.button>
-                </div>
-              </motion.div>
-            ))}
           </div>
-        </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+            {countries.map((country, index) => {
+              return (
+                <motion.div
+                  key={country.name}
+                  className="bg-white rounded-premium shadow-premium overflow-hidden border border-gray-100 group hover:border-secondary transition-all duration-300 flex flex-col"
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  whileHover={{ y: -10 }}
+                  onClick={() => window.open('https://docs.google.com/forms/d/1vHxcmILU7vUN5-fcUxMf7ARn2OQYCZVI3b4AASSkAHo/viewform?ts=68d18637', '_blank')}
+                >
+                  <div className="relative h-72 overflow-hidden">
+                    <Image
+                      src={country.image}
+                      alt={country.name}
+                      fill
+                      className="object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent opacity-40 group-hover:opacity-10 transition-opacity duration-300"></div>
+                  </div>
+
+                  <div className="p-10 flex-grow relative">
+                    {/* Gold accent underline */}
+                    <div className="absolute top-0 left-10 w-12 h-1.5 bg-gold rounded-full -translate-y-1/2"></div>
+
+                    <h3 className="text-2xl font-bold text-primary-deep mb-4 group-hover:text-secondary transition-colors">{country.name}</h3>
+                    <p className="text-gray-600 text-lg leading-relaxed mb-6">{country.description}</p>
+
+                    <div className="mt-auto">
+                      <span className="text-secondary font-bold text-sm uppercase tracking-widest flex items-center group-hover:translate-x-2 transition-transform duration-300">
+                        View Opportunities <span className="ml-2 text-gold">→</span>
+                      </span>
+                    </div>
+                  </div>
+                </motion.div>
+              );
+            })}
+          </div>
+        </div>
       </div>
-      
+
       <Footer />
     </div>
   );

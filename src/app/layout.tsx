@@ -15,15 +15,15 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "VR Aspire Abroad - Your Trusted Partner for Study Abroad",
-    template: "%s | VR Aspire Abroad"
+    default: "Wiseway Overseas - Your Trusted Partner for Study Abroad",
+    template: "%s | Wiseway Overseas"
   },
   description: "We simplify your study abroad process with personalized, end-to-end support to help you pursue higher education across the world. Expert guidance for UK, Australia, Germany, Ireland, Europe, Dubai, and USA.",
   keywords: "study abroad, education consultancy, overseas education, student visa, university admission, UK education, Australia study, Germany universities, Ireland courses, Dubai education, USA colleges",
-  authors: [{ name: "VR Aspire Abroad" }],
-  creator: "VR Aspire Abroad",
-  publisher: "VR Aspire Abroad",
-  metadataBase: new URL('https://vraspireabroad.com'),
+  authors: [{ name: "Wiseway Overseas" }],
+  creator: "Wiseway Overseas",
+  publisher: "Wiseway Overseas",
+  metadataBase: new URL('https://wisewayoverseas.com'),
   robots: {
     index: true,
     follow: true,
@@ -36,19 +36,19 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://vraspireabroad.com"
+    canonical: "https://wisewayoverseas.com"
   },
   openGraph: {
-    title: "VR Aspire Abroad - Your Trusted Partner for Study Abroad",
+    title: "Wiseway Overseas - Your Trusted Partner for Study Abroad",
     description: "Expert study abroad consultancy helping students achieve their dreams of overseas education in UK, Australia, Germany, Ireland, Europe, Dubai, and USA.",
-    url: "https://vraspireabroad.com",
-    siteName: "VR Aspire Abroad",
+    url: "https://wisewayoverseas.com",
+    siteName: "Wiseway Overseas",
     images: [
       {
-        url: "/vRlogo.png",
+        url: "/images/logo.jpeg",
         width: 1200,
         height: 630,
-        alt: "VR Aspire Abroad Logo"
+        alt: "Wiseway Overseas Logo"
       }
     ],
     locale: "en_US",
@@ -56,17 +56,17 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "VR Aspire Abroad - Study Abroad Made Simple",
+    title: "Wiseway Overseas - Study Abroad Made Simple",
     description: "Expert study abroad consultancy helping students achieve their dreams of overseas education.",
-    images: ["/vRlogo.png"],
+    images: ["/images/logo.jpeg"],
   },
   verification: {
     google: "",
   },
   icons: {
-    icon: "/vRlogo.png",
-    shortcut: "/vRlogo.png",
-    apple: "/vRlogo.png",
+    icon: "/images/logo.jpeg",
+    shortcut: "/images/logo.jpeg",
+    apple: "/images/logo.jpeg",
   },
 };
 
