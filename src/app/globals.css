@@ -3,9 +3,11 @@
 :root {
   --background: #ffffff;
   --foreground: #0A0A0A;
-  --primary: #B8860B;
+  --primary: #b9890e;
+  ;
   --secondary: #003366;
 }
+
 @theme {
   --color-primary: #003366;
   --color-primary-deep: #001F3F;
@@ -15,11 +17,11 @@
   --color-gold-light: #FDF5E6;
   --color-bg-light: #F5F7FA;
   --color-text-dark: #0A0A0A;
-  
+
   --font-sans: 'Inter', 'Poppins', sans-serif;
-  
+
   --radius-premium: 12px;
-  
+
   --shadow-premium: 0 10px 30px -10px rgba(15, 42, 102, 0.1);
   --shadow-premium-hover: 0 20px 40px -15px rgba(15, 42, 102, 0.2);
 }
@@ -34,15 +36,15 @@
   .btn-primary {
     @apply bg-gold text-white px-8 py-3 rounded-premium font-bold transition-all duration-300 hover:bg-gold-dark hover:scale-[1.02] active:scale-[0.98] shadow-md;
   }
-  
+
   .btn-outline {
     @apply border-2 border-white text-white px-8 py-3 rounded-premium font-bold transition-all duration-300 hover:bg-white hover:text-primary hover:scale-[1.02] active:scale-[0.98];
   }
-  
+
   .card-premium {
     @apply bg-white p-6 rounded-premium border border-gray-100 shadow-premium transition-all duration-300 hover:shadow-premium-hover hover:border-secondary;
   }
-  
+
   .hero-gradient {
     background: linear-gradient(135deg, #003366 0%, #004080 100%);
   }

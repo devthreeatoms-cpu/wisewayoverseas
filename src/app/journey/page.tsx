@@ -8,43 +8,43 @@ import Image from 'next/image';
 export default function JourneyPage() {
   const steps = [
     {
-      title: "Counseling & Profile Assessment",
-      description: "Initial consultation to understand your academic background, career goals, and study preferences.",
+      title: "Profile Discovery",
+      description: "We evaluate your academic history and career goals to build a solid foundation for your success.",
       image: "/images/counseling.png"
     },
     {
-      title: "Test Preparation",
-      description: "Comprehensive preparation support for IELTS, TOEFL, or Duolingo English Test to achieve target scores.",
+      title: "Strategic Coaching",
+      description: "Targeted training to meet and exceed the linguistic requirements of the world’s top universities.",
       image: "/images/test preparation.png"
     },
     {
-      title: "Course & University Shortlisting",
-      description: "Identifying the best-fit universities and programs based on your profile and aspirations.",
+      title: "Curation & Selection",
+      description: "A tailored list of institutions and courses designed to maximize your long-term career trajectory.",
       image: "/images/couseanduniversityshorlist.png"
     },
     {
-      title: "Application Submission",
-      description: "Assistance with application forms, SOP, LOR, CV, and all required documents for submission.",
+      title: "Precision Submissions",
+      description: "Meticulous preparation of all application materials to ensure your profile stands out.",
       image: "/images/application submission.png"
     },
     {
-      title: "Offer Letter & Tuition Fee Payment",
-      description: "Guidance through offer acceptance process and tuition fee payment procedures.",
+      title: "Offer Evaluation",
+      description: "Expert guidance through offer evaluation, acceptance, and tuition fee management.",
       image: "/images/offer letter.png"
     },
     {
-      title: "Visa Filing",
-      description: "Complete visa application support with document preparation and interview guidance.",
+      title: "Visa Excellence",
+      description: "A rigorous approach to documentation and interview coaching to ensure high success rates.",
       image: "/images/visa filling.png"
     },
     {
-      title: "Pre-departure Support",
-      description: "Essential preparations including travel arrangements, accommodation, and cultural orientation.",
+      title: "Global Readiness",
+      description: "Comprehensive orientation covering travel logistics, housing, and cultural adaptation.",
       image: "/images/predeparture.png"
     },
     {
-      title: "Fly Abroad ✈",
-      description: "Final assistance with airport pickup and settling in at your destination.",
+      title: "Arrival & Integration",
+      description: "Ongoing support to ensure you are ready to thrive in your new academic environment.",
       image: "/images/fly abroad.png"
     }
   ];
@@ -66,9 +66,9 @@ export default function JourneyPage() {
       <div className="py-24 flex-grow bg-bg-light">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">Step-by-Step Path to Your Success</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">Your Path to Global Success</h2>
             <p className="text-gray-600 text-xl leading-relaxed">
-              We guide you through every stage of your study abroad journey, ensuring a smooth and hassle-free experience.
+              We provide end-to-end guidance through every stage of your journey, ensuring a seamless transition to your dream university.
             </p>
           </div>
 

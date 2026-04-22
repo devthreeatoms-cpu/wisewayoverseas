@@ -13,19 +13,19 @@ export default function TestimonialsPage() {
   // Real testimonials
   const testimonials = [
     {
-      name: "Karthik Patel",
-      destination: "MS in Engineering, University of Toronto, Canada",
-      feedback: "I couldn&apos;t have asked for better guidance. Wiseway Overseas helped me navigate the complex application process and secured my admission to one of Canada&apos;s top universities. Forever grateful!"
+      name: "Aditi Sharma",
+      destination: "University of Manchester, UK",
+      feedback: "Wiseway Overseas didn&apos;t just help me with paperwork; they gave me the confidence to aim for the best institutions. I&apos;m now pursuing my Masters in the UK, and the entire process from shortlisting to arrival was incredibly smooth and professional."
     },
     {
-      name: "Ananya Reddy",
-      destination: "Master of Data Science, University of Melbourne, Australia",
-      feedback: "From course selection to visa approval, Wiseway Overseas was with me every step. Their expertise and personalized attention made the entire process stress-free. Thank you for making my dreams come true!"
+      name: "Rahul Iyer",
+      destination: "University of Melbourne, Australia",
+      feedback: "The visa guidance I received was exceptional. They handled every detail with precision, making what seemed like a complex process feel easy. Their student-first approach truly sets them apart as global education partners."
     },
     {
-      name: "Rahul Verma",
-      destination: "MBA, University of Manchester, UK",
-      feedback: "The team at Wiseway Overseas was incredibly supportive. They helped me secure admission to my dream university and guided me through every step. Highly recommended for anyone planning to study abroad!"
+      name: "Priya Verma",
+      destination: "TU Munich, Germany",
+      feedback: "Transparent, professional, and truly focused on my success. Wiseway helped me find the perfect university that fit my career goals and budget perfectly. I couldn&apos;t have asked for a better mentor for my study abroad journey."
     }
   ];
 
@@ -58,9 +58,9 @@ export default function TestimonialsPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">What Our Students Say</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">Voices of Success</h2>
             <p className="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
-              Real experiences from students who achieved their study abroad dreams with Wiseway Overseas.
+              Real stories from students who achieved their global academic goals with the help of Wiseway Overseas.
             </p>
           </motion.div>
 

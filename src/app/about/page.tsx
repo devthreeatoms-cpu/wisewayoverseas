@@ -14,7 +14,7 @@ export default function AboutPage() {
       <div className="pt-32 pb-24 hero-gradient relative overflow-hidden">
         <div className="absolute top-0 right-0 w-full h-full bg-secondary/10 blur-[100px] pointer-events-none"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-          <h1 className="text-5xl font-bold text-white mb-4">Our Story</h1>
+          <h1 className="text-5xl font-bold text-white mb-4">Shaping Global Futures</h1>
           <div className="w-24 h-1.5 bg-gold mx-auto rounded-full"></div>
         </div>
       </div>
@@ -31,15 +31,13 @@ export default function AboutPage() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
               >
-                <h2 className="text-4xl font-bold text-primary mb-8 tracking-tight">Who We Are</h2>
+                <h2 className="text-4xl font-bold text-primary mb-8 tracking-tight">Our Legacy of Excellence</h2>
                 <div className="space-y-6">
                   <p className="text-gray-600 text-xl leading-relaxed">
-                    Wiseway Overseas is a consultancy dedicated to helping students achieve their dreams of studying overseas.
-                    We provide transparent, student-first services with end-to-end support.
+                    Wiseway Overseas is a premier global education consultancy founded on the principle that every student deserves access to world-class opportunities. We are more than just a service provider; we are your global education partners, dedicated to bridging the gap between student ambition and global excellence.
                   </p>
                   <p className="text-gray-600 text-xl leading-relaxed">
-                    Our team of experienced counselors understands the challenges students face when navigating the complex
-                    process of studying abroad, and we are committed to making this journey as smooth and successful as possible.
+                    With a mission to empower students through transparent, results-driven mentorship, we have helped thousands of aspirants secure admissions in top-tier institutions worldwide. Our team of expert advisors combines deep industry knowledge with a student-first approach to ensure your journey from application to arrival is seamless and successful.
                   </p>
                 </div>
               </motion.div>
@@ -80,7 +78,7 @@ export default function AboutPage() {
                 </div>
                 <h2 className="text-3xl font-bold text-primary mb-6">Our Mission</h2>
                 <p className="text-gray-600 text-xl leading-relaxed">
-                  To make global education accessible, affordable, and simple for every aspiring student.
+                  To empower aspiring students by dismantling the barriers to global education through transparency, expert guidance, and unwavering advocacy.
                 </p>
               </motion.div>
 
@@ -96,7 +94,7 @@ export default function AboutPage() {
                 </div>
                 <h2 className="text-3xl font-bold text-primary mb-6">Our Vision</h2>
                 <p className="text-gray-600 text-xl leading-relaxed">
-                  To be the most trusted consultancy guiding students toward global success and lifelong achievement.
+                  To be the global benchmark for excellence in overseas consultancy, recognized for our integrity and the transformative success of our students.
                 </p>
               </motion.div>
             </div>
@@ -109,9 +107,9 @@ export default function AboutPage() {
             <h2 className="text-4xl font-bold text-primary mb-20 tracking-tight">Our Core Values</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
               {[
-                { t: 'Transparency', d: 'We believe in clear communication and honest guidance throughout your study abroad journey.', i: 'T' },
-                { t: 'Integrity', d: 'We uphold the highest ethical standards in all our dealings with students and partners.', i: 'I' },
-                { t: 'Student-Centric', d: 'Every decision we make is focused on what’s best for our students and their future.', i: 'S' }
+                { t: 'Unmatched Transparency', d: 'No hidden fees, no bias—just honest, integrity-driven advice focused solely on your success.', i: 'T' },
+                { t: 'Global Expertise', d: 'Decades of experience in navigating international education systems and admission trends.', i: 'E' },
+                { t: 'Student-First Approach', d: 'Placing your unique aspirations and long-term goals at the center of every decision.', i: 'S' }
               ].map((val, idx) => (
                 <motion.div
                   key={val.t}

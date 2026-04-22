@@ -4,8 +4,10 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import { useRouter } from 'next/navigation';
 
 const NavigationBar = () => {
+  const router = useRouter();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
@@ -55,8 +57,9 @@ const NavigationBar = () => {
             <div className="flex-shrink-0 ml-4">
               <button
                 className="bg-secondary text-white py-3 px-6 rounded-premium font-bold text-[14px] shadow-lg shadow-secondary/10 whitespace-nowrap transition-all duration-300 hover:bg-primary-deep hover:scale-[1.05] active:scale-[0.98]"
+                onClick={() => router.push('/contact')}
               >
-                Book Free Consulting
+                Global Consultation
               </button>
             </div>
           </div>
@@ -100,9 +103,12 @@ const NavigationBar = () => {
             <div className="pt-4 px-4">
               <button
                 className="bg-secondary text-white py-4 w-full rounded-premium font-bold transition-all duration-300 hover:bg-primary-deep"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={() => {
+                  setIsMenuOpen(false);
+                  router.push('/contact');
+                }}
               >
-                Book Free Consulting
+                Global Consultation
               </button>
             </div>
           </div>

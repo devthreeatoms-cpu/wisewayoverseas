@@ -8,28 +8,28 @@ import Image from 'next/image';
 export default function WhyChooseUsPage() {
   const features = [
     {
-      title: "Direct Partnerships with Global Universities",
-      description: "We have established direct connections with universities worldwide, ensuring you get accurate information and streamlined application processes.",
+      title: "Unmatched Transparency",
+      description: "No hidden fees, no bias—just honest, integrity-driven advice focused solely on your long-term academic and career success.",
+      image: "/images/transparent advice.png"
+    },
+    {
+      title: "Global Expertise",
+      description: "Decades of experience in navigating international education systems and admission trends to give you a competitive edge.",
       image: "/images/direct partnerships with global uniersities.png"
     },
     {
-      title: "Transparent, Commission-Free Guidance",
-      description: "Our advice is completely unbiased and transparent. We don't earn commissions from universities, so our recommendations are solely based on your best interests.",
-      image: "/images/transparent advice.png",
+      title: "Proven Success Rate",
+      description: "A track record of securing admissions and visas for even the most competitive student profiles at top-tier institutions.",
+      image: "/images/end-end support.png"
     },
     {
-      title: "End-to-End Support",
-      description: "From initial counseling to post-arrival support, we guide you through every step of your study abroad journey.",
-      image: "/images/end-end support.png",
-    },
-    {
-      title: "Personalized, One-on-One Sessions",
-      description: "We provide individualized attention to understand your unique goals and create a customized roadmap for your success.",
+      title: "1-on-1 Personalized Approach",
+      description: "Every student is unique. We provide individualized attention to create a customized strategy that maximizes your chances of admission.",
       image: "/images/one-one session.png"
     },
     {
-      title: "Quick and Hassle-Free Processing",
-      description: "Our efficient processes ensure timely submissions and faster responses, reducing your wait time and anxiety.",
+      title: "Accelerated Pathways",
+      description: "Our optimized processes ensure timely submissions and faster responses, transforming a complex process into manageable milestones.",
       image: "/images/quick hassale.png"
     }
   ];
@@ -61,9 +61,9 @@ export default function WhyChooseUsPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="text-3xl font-bold text-secondary mb-4">What Sets Us Apart</h2>
+            <h2 className="text-3xl font-bold text-secondary mb-4">The Wiseway Advantage</h2>
             <p className="text-gray-600 text-lg max-w-3xl mx-auto">
-              We are committed to providing exceptional service and support to make your study abroad dreams a reality.
+              We are committed to providing exceptional mentorship and strategic support to turn your international education dreams into a reality.
             </p>
           </motion.div>
 

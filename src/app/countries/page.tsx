@@ -8,38 +8,38 @@ import Image from 'next/image';
 export default function CountriesPage() {
   const countries = [
     {
-      name: "UK 🇬🇧",
-      description: "World-class universities, 2-year PSW visa, diverse courses.",
+      name: "United Kingdom 🇬🇧",
+      description: "A tradition of academic excellence with globally recognized degrees, world-class research, and a vibrant cultural heritage.",
       image: "/images/uk.png"
     },
     {
       name: "Australia 🇦🇺",
-      description: "Top-ranked universities, multicultural environment, strong job prospects.",
-      image: "/images/australia.png"
+      description: "Unparalleled career growth and research opportunities in a diverse, welcoming environment with a high quality of life.",
+      image: "/images/Australia.png"
     },
     {
       name: "Germany 🇩🇪",
-      description: "Low tuition, high-quality education, opportunities in engineering and IT.",
+      description: "High-quality education with low-to-no tuition fees, perfect for aspirants in engineering, IT, and industrial technology.",
       image: "/images/germany.png"
     },
     {
       name: "Ireland 🇮🇪",
-      description: "Growing tech hub with post-study work opportunities.",
+      description: "Europe's emerging tech hub offering specialized courses and excellent post-study work pathways in a friendly setting.",
       image: "/images/ireland.png"
     },
     {
       name: "Europe 🌍",
-      description: "Affordable education options across leading European countries.",
+      description: "Continental excellence with diverse, affordable education options across the world's most influential academic centers.",
       image: "/images/europe.png"
     },
     {
       name: "Dubai 🇦🇪",
-      description: "Safe, modern, and fast-growing education hub.",
+      description: "A modern, fast-growing education gateway connecting you to global business opportunities and a futuristic lifestyle.",
       image: "/images/dubai.png"
     },
     {
       name: "USA 🇺🇸",
-      description: "Premier universities with flexible study programs.",
+      description: "The ultimate destination for innovation, offering diverse programs at the world's most prestigious and influential universities.",
       image: "/images/usa.png"
     }
   ];
@@ -61,9 +61,9 @@ export default function CountriesPage() {
       <div className="py-24 flex-grow">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">Explore Your Future Abroad</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">World-Class Study Destinations</h2>
             <p className="text-gray-600 text-xl max-w-3xl mx-auto leading-relaxed">
-              We guide you through the process of studying in some of the most prestigious education hubs in the world.
+              Explore your future in the world’s most prestigious education hubs with our expert guidance and institutional insights.
             </p>
           </div>
 
@@ -97,11 +97,7 @@ export default function CountriesPage() {
                     <h3 className="text-2xl font-bold text-primary-deep mb-4 group-hover:text-secondary transition-colors">{country.name}</h3>
                     <p className="text-gray-600 text-lg leading-relaxed mb-6">{country.description}</p>
 
-                    <div className="mt-auto">
-                      <span className="text-secondary font-bold text-sm uppercase tracking-widest flex items-center group-hover:translate-x-2 transition-transform duration-300">
-                        View Opportunities <span className="ml-2 text-gold">→</span>
-                      </span>
-                    </div>
+
                   </div>
                 </motion.div>
               );

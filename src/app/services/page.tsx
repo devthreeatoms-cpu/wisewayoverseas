@@ -7,32 +7,32 @@ import Footer from '@/components/Footer';
 export default function ServicesPage() {
   const services = [
     {
-      title: "University Selection",
-      description: "We help you choose the right universities based on your academic profile, career goals, and personal preferences."
+      title: "Personalized Guidance",
+      description: "Expert mentorship to align your academic strengths and career aspirations with the world's most prestigious universities."
     },
     {
-      title: "Application Guidance",
-      description: "Expert assistance with SOP, LOR, CV preparation and application submission to ensure maximum acceptance chances."
+      title: "Score Improvement",
+      description: "Targeted coaching for IELTS, TOEFL, and PTE to unlock doors to top-ranked institutions and global opportunities."
     },
     {
-      title: "Test Prep Support",
-      description: "Comprehensive preparation support for IELTS, TOEFL, and Duolingo English Test to achieve your target scores."
+      title: "Right-Fit University Shortlisting",
+      description: "Data-backed selection of universities that perfectly match your profile, budget, and long-term career goals."
     },
     {
-      title: "Visa Assistance",
-      description: "End-to-end visa application support with document preparation and interview guidance."
+      title: "Error-Free Submissions",
+      description: "Meticulous application management and refinement of SOPs and LORs to ensure your profile stands out to admission committees."
     },
     {
-      title: "Scholarship & Funding Advice",
-      description: "Identify and apply for scholarships and financial aid opportunities to make your education more affordable."
+      title: "Smooth Approvals",
+      description: "Expert guidance through complex visa documentation and interview preparation to ensure high success rates."
     },
     {
-      title: "Pre-departure & Accommodation",
-      description: "Guidance on travel arrangements, accommodation options, and essential preparations before departure."
+      title: "Stress-Free Relocation",
+      description: "Comprehensive support for travel planning, cultural orientation, and secure accommodation scouting for a seamless transition."
     },
     {
-      title: "Post-arrival Support",
-      description: "Assistance with settling in, airport pickup, and ongoing support during your initial period abroad."
+      title: "Continuous Student Advocacy",
+      description: "Ongoing mentorship and support to help you integrate and excel from the moment you land on your new campus."
     }
   ];
 
@@ -53,9 +53,9 @@ export default function ServicesPage() {
       <div className="py-24 flex-grow bg-bg-light">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">Comprehensive Study Abroad Support</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">Expert Support for Every Step</h2>
             <p className="text-gray-600 text-xl max-w-3xl mx-auto leading-relaxed">
-              From initial counseling to post-arrival support, we provide end-to-end services to ensure your study abroad journey is smooth and successful.
+              From initial counseling to post-arrival mentorship, we provide the strategic guidance you need to turn your global ambitions into a successful reality.
             </p>
           </div>
 

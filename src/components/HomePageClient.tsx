@@ -2,42 +2,44 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 
 export default function HomePageClient() {
+  const router = useRouter();
   const destinations = [
     {
-      name: 'UK 🇬🇧',
-      description: 'World-class universities, 2-year PSW visa, diverse courses.',
+      name: 'United Kingdom 🇬🇧',
+      description: 'Access world-class research institutions and globally recognized degrees in a historic academic setting.',
       image: '/images/uk.png'
     },
     {
       name: 'Australia 🇦🇺',
-      description: 'Top-ranked universities, multicultural environment, strong job prospects.',
+      description: 'Benefit from cutting-edge research and a vibrant, multicultural environment with strong career prospects.',
       image: '/images/Australia.png'
     },
     {
       name: 'Germany 🇩🇪',
-      description: 'Low tuition, high-quality education, opportunities in engineering and IT.',
+      description: 'Leverage exceptional engineering and technology programs with minimal tuition fees in Europe’s industrial heart.',
       image: '/images/germany.png'
     },
     {
       name: 'Ireland 🇮🇪',
-      description: 'Growing tech hub with post-study work opportunities.',
+      description: 'Explore opportunities in Europe’s fastest-growing tech hub with excellent post-study work pathways.',
       image: '/images/ireland.png'
     },
     {
       name: 'Europe 🌍',
-      description: 'Affordable education options across leading European countries.',
+      description: 'Discover diverse and affordable education options across the most influential countries in the EU.',
       image: '/images/europe.png'
     },
     {
       name: 'Dubai 🇦🇪',
-      description: 'Safe, modern, and fast-growing education hub.',
+      description: 'Experience modern, futuristic education in a rapidly expanding global business and tourism hub.',
       image: '/images/dubai.png'
     },
     {
       name: 'USA 🇺🇸',
-      description: 'Premier universities with flexible study programs.',
+      description: 'Unrivaled innovation and academic diversity at the world’s most prestigious university networks.',
       image: '/images/usa.png'
     }
   ];
@@ -50,9 +52,9 @@ export default function HomePageClient() {
   ];
 
   const whyChooseUs = [
-    { title: 'Expert Counselors', description: 'Professional guidance from experienced counselors.' },
-    { title: 'Fast Processing', description: 'Quick and efficient application processing.' },
-    { title: 'Transparent Guidance', description: 'Clear and honest advice throughout your journey.' },
+    { title: 'Global Expertise', description: 'Decades of experience in navigating international education systems and admission trends.' },
+    { title: 'Proven Success Rate', description: 'A track record of securing admissions and visas for even the most competitive student profiles.' },
+    { title: 'Unmatched Transparency', description: 'Honest, integrity-driven advice focused solely on your long-term academic and career success.' },
   ];
 
   return (
@@ -79,18 +81,18 @@ export default function HomePageClient() {
                 className="inline-flex items-center bg-gold/20 text-gold-light border border-gold/30 px-5 py-1.5 rounded-full text-sm font-semibold mb-8 backdrop-blur-sm"
               >
                 <span className="w-2 h-2 bg-gold rounded-full mr-3 animate-pulse"></span>
-                Empowering Ambitions, Bridging Borders
+                Your Global Ambition, Our Expert Guidance
               </motion.div>
               <motion.h1
                 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-8 leading-[1.1]"
               >
-                Navigate Your Future <br />
-                With <span className="text-gold">Global Excellence</span>
+                Navigate Your Path To <br />
+                <span className="text-gold">Global Excellence</span>
               </motion.h1>
               <motion.p
                 className="text-white/80 mb-12 text-xl max-w-xl leading-relaxed"
               >
-                Your journey to a world-class education begins here. We provide personalized pathways to the world&apos;s most prestigious universities, turning your international aspirations into reality.
+                Gain admission to the world&apos;s most prestigious universities with India&apos;s most trusted study abroad partner. Secure your future with personalized mentorship and end-to-end support.
               </motion.p>
               <motion.div
                 className="flex flex-col sm:flex-row gap-6"
@@ -99,16 +101,17 @@ export default function HomePageClient() {
                   className="btn-primary py-4 px-10 text-lg shadow-xl shadow-black/20"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.98 }}
-                  onClick={() => window.open('https://docs.google.com/forms/d/1vHxcmILU7vUN5-fcUxMf7ARn2OQYCZVI3b4AASSkAHo/viewform?ts=68d18637', '_blank')}
+                  onClick={() => router.push('/contact')}
                 >
-                  Book Your Consultation
+                  Book Your Free Consultation
                 </motion.button>
                 <motion.button
                   className="btn-outline py-4 px-10 text-lg"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.98 }}
+                  onClick={() => router.push('/contact')}
                 >
-                  Learn More
+                  Explore Destinations
                 </motion.button>
               </motion.div>
             </motion.div>
@@ -158,7 +161,7 @@ export default function HomePageClient() {
             className="relative inline-block"
           >
             <p className="text-2xl md:text-3xl text-primary font-medium max-w-4xl mx-auto leading-relaxed italic">
-              &quot;Wiseway Overseas is dedicated to shaping the next generation of global leaders by providing expert guidance and access to world-class educational opportunities across the globe.&quot;
+              &quot;At Wiseway Overseas, we don&apos;t just process applications; we mentor the next generation of global leaders, ensuring every student has the tools to thrive in the world&apos;s most prestigious academic environments.&quot;
             </p>
             <div className="absolute -left-8 -top-8 text-gold-light text-8xl opacity-30 select-none font-serif">“</div>
           </motion.div>
@@ -169,7 +172,7 @@ export default function HomePageClient() {
       <section className="py-32 bg-bg-light" id="countries">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
-            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">Popular Destinations</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">Study Destinations</h2>
             <div className="w-24 h-1.5 bg-gold mx-auto rounded-full"></div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
@@ -243,17 +246,18 @@ export default function HomePageClient() {
 
           <div className="relative z-10 py-20 px-8 md:px-16 text-center">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">
-              Ready to Start Your <span className="text-gold">Global Journey?</span>
+              Your Global Success <span className="text-gold">Starts Here</span>
             </h2>
             <p className="text-white/80 text-xl mb-12 max-w-2xl mx-auto">
-              Take the first step towards your dream of studying abroad with our expert guidance and personalized support.
+              Don&apos;t leave your international education to chance. Partner with experts who care about your future and start your journey today.
             </p>
             <motion.button
               className="bg-secondary text-white py-5 px-12 rounded-premium font-bold text-xl shadow-xl transition-all duration-300 hover:bg-primary-deep hover:scale-[1.05] active:scale-[0.98]"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              onClick={() => router.push('/contact')}
             >
-              Book Free Consulting Now
+              Start Your Journey Today
             </motion.button>
           </div>
         </motion.div>

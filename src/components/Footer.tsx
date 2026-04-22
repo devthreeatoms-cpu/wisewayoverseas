@@ -35,7 +35,7 @@ const Footer = () => {
               </span>
             </Link>
             <p className="text-white/60 leading-relaxed text-lg max-w-xs">
-              Your trusted partner for a hassle-free study abroad journey with personalized, end-to-end support.
+              Wiseway Overseas is a premier study abroad consultancy dedicated to bridging the gap between student ambitions and global excellence through trusted, end-to-end guidance.
             </p>
             <div className="flex space-x-4">
               {[
@@ -126,10 +126,10 @@ const Footer = () => {
           {/* Newsletter */}
           <div>
             <h3 className="text-xl font-bold mb-8 text-white relative inline-block">
-              Newsletter
+              Stay Informed
               <span className="absolute -bottom-2 left-0 w-12 h-1 bg-gold rounded-full"></span>
             </h3>
-            <p className="text-white/60 mb-8 leading-relaxed">Subscribe for the latest global education updates and visa news.</p>
+            <p className="text-white/60 mb-8 leading-relaxed">Subscribe to receive the latest insights on global education trends and visa updates.</p>
             <form className="space-y-4">
               <div className="relative">
                 <input
