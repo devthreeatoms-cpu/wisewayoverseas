@@ -3,7 +3,6 @@
 import NavigationBar from '@/components/NavigationBar';
 import Footer from '@/components/Footer';
 import { motion } from 'framer-motion';
-import Image from 'next/image';
 import { useState } from 'react';
 
 export default function ContactPage() {
