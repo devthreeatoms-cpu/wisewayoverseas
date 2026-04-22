@@ -17,7 +17,7 @@ const nextConfig: NextConfig = {
   // Configure image optimization
   images: {
     // Add domains if you're using external images
-    domains: [],
+    domains: ['i.pravatar.cc'],
   },
 };
 

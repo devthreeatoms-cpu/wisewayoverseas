@@ -64,9 +64,9 @@ export const metadata: Metadata = {
     google: "",
   },
   icons: {
-    icon: "/images/logo.jpeg",
-    shortcut: "/images/logo.jpeg",
-    apple: "/images/logo.jpeg",
+    icon: "/images/logo2.jpeg",
+    shortcut: "/images/logo2.jpeg",
+    apple: "/images/logo2.jpeg",
   },
 };
 
