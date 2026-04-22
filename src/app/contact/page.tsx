@@ -57,7 +57,7 @@ export default function ContactPage() {
           >
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">Get In Touch</h2>
             <p className="text-gray-600 text-xl max-w-3xl mx-auto leading-relaxed">
-              Have questions about studying abroad? Reach out to us and our expert counselors will guide you through the process.
+              Ready to take the next step in your global education? Our expert counselors are here to provide personalized guidance and answer all your questions.
             </p>
           </motion.div>
           
