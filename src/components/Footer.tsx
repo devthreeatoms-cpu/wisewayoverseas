@@ -151,10 +151,10 @@ const Footer = () => {
           <p className="text-white/30 text-sm italic">
             &copy; {new Date().getFullYear()} Wiseway Overseas. All Rights Reserved.
           </p>
-          <div className="text-white/20 text-[11px] uppercase tracking-widest font-bold">
-            Designed & Developed by
+          <div className="text-white/20 text-[10px] md:text-[11px] uppercase tracking-widest font-bold flex flex-wrap justify-center items-center gap-y-2">
+            <span>Designed & Developed by</span>
             <a href="https://www.threeatoms.com" target="_blank" rel="dofollow" className="text-gold/40 hover:text-gold ml-2 transition-colors">ThreeAtoms</a>
-            <span className="mx-3 opacity-30">•</span>
+            <span className="mx-3 opacity-30 hidden sm:inline">•</span>
             <a href="https://wa.me/918179247099" target="_blank" className="text-white/20 hover:text-white transition-colors">+91 81792 47099</a>
           </div>
         </div>

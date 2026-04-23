@@ -11,7 +11,7 @@ export default function AboutPage() {
       <NavigationBar />
 
       {/* Banner */}
-      <section className="pt-48 pb-32 hero-gradient relative overflow-hidden">
+      <section className="pt-32 md:pt-48 pb-20 md:pb-32 hero-gradient relative overflow-hidden">
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-gold/10 blur-[120px] rounded-full -mr-64 -mt-64 pointer-events-none animate-pulse"></div>
         <div className="section-container relative z-10 text-center">
           <motion.div
@@ -20,7 +20,7 @@ export default function AboutPage() {
             transition={{ duration: 0.8 }}
           >
             <span className="text-gold text-sm font-bold uppercase tracking-[0.3em] mb-4 block">About Wiseway Overseas</span>
-            <h1 className="text-5xl md:text-7xl font-bold text-white mb-8 tracking-tight text-balance">Shaping Global Futures</h1>
+            <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-8 tracking-tight text-balance">Shaping Global Futures</h1>
             <div className="w-24 h-1.5 bg-gold mx-auto rounded-full"></div>
           </motion.div>
         </div>

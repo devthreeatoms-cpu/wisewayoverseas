@@ -100,7 +100,7 @@ export default function HomePageClient() {
                 </span>
               </motion.div>
 
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-[1.05] tracking-tight">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-[1.1] md:leading-[1.05] tracking-tight">
                 Unlock Your <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold via-gold-light to-gold">Global Potential</span>
               </h1>
@@ -128,32 +128,32 @@ export default function HomePageClient() {
               </div>
 
               {/* Floating Stat Card (Mobile/Tablet subtle view) */}
-              <div className="mt-12 grid grid-cols-3 gap-6">
+              <div className="mt-12 grid grid-cols-2 sm:grid-cols-3 gap-8">
                 <div>
-                  <p className="text-gold text-3xl font-bold mb-1">98%</p>
-                  <p className="text-white/40 text-xs uppercase tracking-widest font-bold">Success Rate</p>
+                  <p className="text-gold text-3xl md:text-4xl font-bold mb-1">98%</p>
+                  <p className="text-white/40 text-[10px] md:text-xs uppercase tracking-widest font-bold">Success Rate</p>
                 </div>
-                <div className="border-l border-white/10 pl-8">
-                  <p className="text-gold text-3xl font-bold mb-1">500+</p>
-                  <p className="text-white/40 text-xs uppercase tracking-widest font-bold">Universities</p>
+                <div className="border-l border-white/10 pl-6 md:pl-8">
+                  <p className="text-gold text-3xl md:text-4xl font-bold mb-1">500+</p>
+                  <p className="text-white/40 text-[10px] md:text-xs uppercase tracking-widest font-bold">Universities</p>
                 </div>
-                <div className="border-l border-white/10 pl-8">
-                  <p className="text-gold text-3xl font-bold mb-1">24/7</p>
-                  <p className="text-white/40 text-xs uppercase tracking-widest font-bold">Support</p>
+                <div className="border-l border-white/10 pl-6 md:pl-8 sm:border-l sm:block col-span-2 sm:col-span-1 pt-6 sm:pt-0 border-t sm:border-t-0 border-white/10">
+                  <p className="text-gold text-3xl md:text-4xl font-bold mb-1">24/7</p>
+                  <p className="text-white/40 text-[10px] md:text-xs uppercase tracking-widest font-bold">Expert Support</p>
                 </div>
               </div>
             </motion.div>
 
             {/* Right Column: Visual Composition */}
             <motion.div
-              className="relative hidden lg:block"
+              className="relative mt-16 lg:mt-0"
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, delay: 0.4 }}
             >
               <div className="relative">
                 {/* Main Hero Image Frame */}
-                <div className="relative w-[400px] h-[500px] mx-auto rounded-[48px] overflow-hidden border-[8px] border-white/5 shadow-2xl group">
+                <div className="relative w-full max-w-[400px] aspect-[4/5] mx-auto rounded-[32px] md:rounded-[48px] overflow-hidden border-[8px] border-white/5 shadow-2xl group">
                   <Image
                     src={landmarks[0].image}
                     alt="Study Abroad"
@@ -164,11 +164,11 @@ export default function HomePageClient() {
                   <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
                 </div>
 
-                {/* Floating Glass Cards */}
+                {/* Floating Glass Cards - Hidden on small mobile for clarity but visible on tablets/desktop */}
                 <motion.div
                   animate={{ y: [0, -20, 0] }}
                   transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-                  className="absolute -right-12 top-20 bg-white/10 backdrop-blur-2xl border border-white/20 p-6 rounded-3xl shadow-2xl max-w-[200px]"
+                  className="absolute -right-4 md:-right-12 top-10 md:top-20 bg-white/10 backdrop-blur-2xl border border-white/20 p-4 md:p-6 rounded-2xl md:rounded-3xl shadow-2xl max-w-[150px] md:max-w-[200px] z-20"
                 >
                   <div className="flex items-center gap-4 mb-3">
                     <div className="w-10 h-10 rounded-full overflow-hidden relative border border-gold/50">
@@ -187,7 +187,7 @@ export default function HomePageClient() {
                 <motion.div
                   animate={{ y: [0, 20, 0] }}
                   transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-                  className="absolute -left-12 bottom-32 bg-white/10 backdrop-blur-2xl border border-white/20 p-6 rounded-3xl shadow-2xl"
+                  className="absolute -left-4 md:-left-12 bottom-20 md:bottom-32 bg-white/10 backdrop-blur-2xl border border-white/20 p-4 md:p-6 rounded-2xl md:rounded-3xl shadow-2xl z-20"
                 >
                   <div className="flex items-center gap-3 mb-2">
                     <span className="flex h-3 w-3 relative">

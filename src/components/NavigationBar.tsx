@@ -120,7 +120,7 @@ const NavigationBar = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="xl:hidden bg-white border-t border-slate-100 shadow-2xl overflow-hidden"
+            className="xl:hidden bg-white border-t border-slate-100 shadow-2xl overflow-y-auto max-h-[calc(100vh-80px)]"
           >
             <div className="px-4 pt-4 pb-12 space-y-2">
               {navLinks.map((link, index) => (

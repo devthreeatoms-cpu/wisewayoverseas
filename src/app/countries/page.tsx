@@ -49,10 +49,10 @@ export default function CountriesPage() {
       <NavigationBar />
 
       {/* Banner */}
-      <div className="pt-32 pb-24 hero-gradient relative overflow-hidden">
+      <div className="pt-32 md:pt-40 pb-20 md:pb-24 hero-gradient relative overflow-hidden">
         <div className="absolute inset-0 bg-secondary/10 blur-[100px] pointer-events-none"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-          <h1 className="text-5xl font-bold text-white mb-4">Study Destinations</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Study Destinations</h1>
           <div className="w-24 h-1.5 bg-gold mx-auto rounded-full"></div>
         </div>
       </div>
