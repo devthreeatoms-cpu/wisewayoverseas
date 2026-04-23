@@ -23,7 +23,7 @@ const Footer = () => {
             <Link href="/" className="flex items-center group">
               <div className="relative">
                 <Image
-                  src="/images/logo.jpeg"
+                  src="/images/logo2.jpeg"
                   alt="Wiseway Overseas Logo"
                   width={65}
                   height={65}

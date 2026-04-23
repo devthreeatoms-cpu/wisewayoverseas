@@ -11,7 +11,7 @@ export function StructuredData() {
         "url": "https://wisewayoverseas.com",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://wisewayoverseas.com/images/logo.jpeg",
+          "url": "https://wisewayoverseas.com/images/logo2.jpeg",
           "width": 1200,
           "height": 630
         },
@@ -40,7 +40,7 @@ export function StructuredData() {
         "@type": "LocalBusiness",
         "@id": "https://wisewayoverseas.com/#localbusiness",
         "name": "Wiseway Overseas Hyderabad",
-        "image": "https://wisewayoverseas.com/images/logo.jpeg",
+        "image": "https://wisewayoverseas.com/images/logo2.jpeg",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Gajams Complex, Beside Croma Electronics, Srinagar Colony, Pillar NO.1549, Dilsukhnagar",
