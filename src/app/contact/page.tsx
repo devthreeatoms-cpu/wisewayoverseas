@@ -71,7 +71,7 @@ export default function ContactPage() {
               className="space-y-12"
             >
               <a 
-                href="https://www.google.com/maps/search/?api=1&query=Gajams+Complex+Beside+Croma+Electronics+Srinagar+Colony+Pillar+NO.1549+Dilsukhnagar+Hyderabad+Telangana+India+Pincode-500060"
+                href="https://maps.app.goo.gl/ZLjW6M8HFbAEnQVm7?g_st=aw"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block relative group rounded-premium overflow-hidden shadow-premium border border-white h-[400px]"
@@ -82,7 +82,7 @@ export default function ContactPage() {
                   </div>
                 </div>
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.962!2d78.537!3d17.372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDIyJzE5LjIiTiA3OMKwMzInMTMuMiJF!5e0!3m2!1sen!2sin!4v1713692400000!5m2!1sen!2sin"
+                  src="https://maps.google.com/maps?q=17.367933,78.528751&z=15&output=embed"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
@@ -94,21 +94,27 @@ export default function ContactPage() {
               </a>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div className="bg-white p-8 rounded-premium shadow-premium border border-gray-50 group hover:border-gold transition-all duration-300">
+                <a 
+                  href="mailto:teamwiseway@gmail.com"
+                  className="bg-white p-8 rounded-premium shadow-premium border border-gray-50 group hover:border-gold transition-all duration-300 block"
+                >
                   <div className="w-12 h-12 bg-gold-light text-gold rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                     <span className="text-xl">✉</span>
                   </div>
                   <h3 className="text-xl font-bold text-primary mb-2">Email Us</h3>
                   <p className="text-gray-600">teamwiseway@gmail.com</p>
-                </div>
+                </a>
 
-                <div className="bg-white p-8 rounded-premium shadow-premium border border-gray-50 group hover:border-gold transition-all duration-300">
+                <a 
+                  href="tel:+919666604038"
+                  className="bg-white p-8 rounded-premium shadow-premium border border-gray-50 group hover:border-gold transition-all duration-300 block"
+                >
                   <div className="w-12 h-12 bg-gold-light text-gold rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                     <span className="text-xl">📞</span>
                   </div>
                   <h3 className="text-xl font-bold text-primary mb-2">Call Us</h3>
                   <p className="text-gray-600">+91 96666 04038</p>
-                </div>
+                </a>
               </div>
             </motion.div>
             

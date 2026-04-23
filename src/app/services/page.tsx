@@ -79,9 +79,7 @@ export default function ServicesPage() {
                 <h3 className="text-2xl font-bold text-primary mb-4 group-hover:text-secondary transition-colors">{service.title}</h3>
                 <p className="text-gray-600 text-lg leading-relaxed">{service.description}</p>
 
-                <div className="mt-8 flex items-center text-secondary font-bold text-sm uppercase tracking-widest opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500">
-                  Learn More <span className="ml-2">→</span>
-                </div>
+
               </motion.div>
             ))}
           </div>

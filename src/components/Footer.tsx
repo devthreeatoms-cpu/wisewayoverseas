@@ -39,7 +39,7 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               {[
-                { name: 'facebook', href: '#', color: 'hover:bg-blue-600' },
+                { name: 'mail', href: 'mailto:teamwiseway@gmail.com', color: 'hover:bg-red-600', isSvg: true },
                 { name: 'instagram', href: 'https://www.instagram.com/wiseway.overseas?utm_source=qr&igsh=aHNrb3N6NDhkenRv', color: 'hover:bg-pink-600' },
                 { name: 'linkedin', href: '#', color: 'hover:bg-blue-700' }
               ].map((social) => (
@@ -48,10 +48,14 @@ const Footer = () => {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`w-10 h-10 rounded-full bg-white/5 flex items-center justify-center transition-all duration-300 ${social.color} hover:scale-110 border border-white/10`}
+                  className={`group w-10 h-10 rounded-full bg-white/5 flex items-center justify-center transition-all duration-300 ${social.color} hover:scale-110 border border-white/10`}
                 >
                   <span className="sr-only">{social.name}</span>
-                  <Image src={`/${social.name}.png`} alt={social.name} width={20} height={20} className="invert opacity-70 group-hover:opacity-100" />
+                  {social.isSvg ? (
+                    <svg className="w-5 h-5 text-white opacity-70 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                  ) : (
+                    <Image src={`/${social.name}.png`} alt={social.name} width={20} height={20} className="invert opacity-70 group-hover:opacity-100 transition-opacity" />
+                  )}
                 </a>
               ))}
             </div>
@@ -88,26 +92,26 @@ const Footer = () => {
                 <div className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center mr-4 mt-0.5 border border-white/10 group-hover:border-gold/30 transition-all">
                   <span className="text-gold text-lg">✉</span>
                 </div>
-                <div>
+                <a href="mailto:teamwiseway@gmail.com" className="block">
                   <p className="text-white/40 text-xs font-bold uppercase tracking-widest mb-1">Email Address</p>
                   <p className="text-white/80 group-hover:text-gold transition-colors break-all">teamwiseway@gmail.com</p>
-                </div>
+                </a>
               </li>
               <li className="flex items-start group">
                 <div className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center mr-4 mt-0.5 border border-white/10 group-hover:border-gold/30 transition-all">
                   <span className="text-gold text-lg">📞</span>
                 </div>
-                <div>
+                <a href="tel:+919666604038" className="block">
                   <p className="text-white/40 text-xs font-bold uppercase tracking-widest mb-1">Phone Number</p>
                   <p className="text-white/80 group-hover:text-gold transition-colors">+91 96666 04038</p>
-                </div>
+                </a>
               </li>
               <li className="flex items-start group">
                 <div className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center mr-4 mt-0.5 border border-white/10 group-hover:border-gold/30 transition-all">
                   <span className="text-gold text-lg">📍</span>
                 </div>
                 <a 
-                  href="https://www.google.com/maps/search/?api=1&query=Gajams+Complex+Beside+Croma+Electronics+Srinagar+Colony+Pillar+NO.1549+Dilsukhnagar+Hyderabad+Telangana+India+Pincode-500060"
+                  href="https://maps.app.goo.gl/ZLjW6M8HFbAEnQVm7?g_st=aw"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group"
