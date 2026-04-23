@@ -32,6 +32,9 @@ export default function ContactPage() {
     window.open(`https://wa.me/919666604038?text=${message}`, '_blank');
   };
 
+
+
+
   return (
     <div className="min-h-screen bg-white flex flex-col">
       <NavigationBar />
