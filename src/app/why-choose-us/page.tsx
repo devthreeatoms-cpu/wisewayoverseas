@@ -39,9 +39,11 @@ export default function WhyChooseUsPage() {
       <NavigationBar />
 
       {/* Banner */}
-      <div className="pt-24 pb-16 bg-gradient-to-r from-secondary to-primary">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl font-bold text-center text-white">Why Choose Wiseway Overseas</h1>
+      <div className="pt-40 md:pt-56 pb-20 md:pb-32 bg-[#001F3F] relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-secondary/20 blur-[120px] rounded-full -mr-96 -mt-96 pointer-events-none"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">Why Choose Wiseway Overseas</h1>
+          <div className="w-24 h-1.5 bg-gold mx-auto rounded-full"></div>
         </div>
       </div>
 

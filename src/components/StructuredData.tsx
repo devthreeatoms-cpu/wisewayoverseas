@@ -3,26 +3,55 @@ import Script from 'next/script';
 export function StructuredData() {
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "EducationalOrganization",
-    "name": "Wiseway Overseas",
-    "url": "https://wisewayoverseas.com",
-    "logo": "https://wisewayoverseas.com/images/logo.jpeg",
-    "description": "Your trusted partner for a hassle-free study abroad journey with personalized, end-to-end support.",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Gajams Complex, Beside Croma Electronics, Srinagar Colony, Pillar NO.1549, Dilsukhnagar",
-      "addressLocality": "Hyderabad",
-      "addressRegion": "Telangana",
-      "postalCode": "500060",
-      "addressCountry": "India"
-    },
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "email": "teamwiseway@gmail.com",
-      "contactType": "customer service"
-    },
-    "sameAs": [
-      "https://www.instagram.com/wiseway.overseas?utm_source=qr&igsh=aHNrb3N6NDhkenRv"
+    "@graph": [
+      {
+        "@type": "EducationalOrganization",
+        "@id": "https://wisewayoverseas.com/#organization",
+        "name": "Wiseway Overseas",
+        "url": "https://wisewayoverseas.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://wisewayoverseas.com/images/logo.jpeg",
+          "width": 1200,
+          "height": 630
+        },
+        "description": "India's premier study abroad consultancy providing expert guidance for UK, Australia, Germany, USA, and Europe.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Gajams Complex, Beside Croma Electronics, Srinagar Colony, Pillar NO.1549, Dilsukhnagar",
+          "addressLocality": "Hyderabad",
+          "addressRegion": "Telangana",
+          "postalCode": "500060",
+          "addressCountry": "India"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+91 96666 04038",
+          "contactType": "customer service",
+          "email": "teamwiseway@gmail.com",
+          "areaServed": "IN",
+          "availableLanguage": ["en", "hi", "te"]
+        },
+        "sameAs": [
+          "https://www.instagram.com/wiseway.overseas?utm_source=qr&igsh=aHNrb3N6NDhkenRv"
+        ]
+      },
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://wisewayoverseas.com/#localbusiness",
+        "name": "Wiseway Overseas Hyderabad",
+        "image": "https://wisewayoverseas.com/images/logo.jpeg",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Gajams Complex, Beside Croma Electronics, Srinagar Colony, Pillar NO.1549, Dilsukhnagar",
+          "addressLocality": "Hyderabad",
+          "addressRegion": "Telangana",
+          "postalCode": "500060",
+          "addressCountry": "India"
+        },
+        "priceRange": "$$",
+        "telephone": "+91 96666 04038"
+      }
     ]
   };
 

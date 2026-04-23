@@ -85,9 +85,9 @@ const NavigationBar = () => {
               <button
                 className="bg-gold text-white py-3 px-8 rounded-full font-bold text-[14px] shadow-lg shadow-gold/20 whitespace-nowrap transition-all duration-300 hover:bg-gold-dark hover:scale-[1.05] active:scale-[0.98]"
                 onClick={() => router.push('/contact')}
-                aria-label="Book Global Consultation"
+                aria-label="Book Consultation"
               >
-                Global Consultation
+                Consultation
               </button>
             </div>
           </div>
@@ -153,7 +153,7 @@ const NavigationBar = () => {
                     router.push('/contact');
                   }}
                 >
-                  Global Consultation
+                  Consultation
                 </button>
               </motion.div>
             </div>

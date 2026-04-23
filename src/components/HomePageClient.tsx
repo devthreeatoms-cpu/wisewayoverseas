@@ -101,8 +101,8 @@ export default function HomePageClient() {
               </motion.div>
 
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-[1.1] md:leading-[1.05] tracking-tight">
-                Unlock Your <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold via-gold-light to-gold">Global Potential</span>
+                India&apos;s Trusted <br />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold via-gold-light to-gold">Study Abroad Experts</span>
               </h1>
 
               <p className="text-white/60 text-lg md:text-xl mb-10 max-w-xl leading-relaxed font-light">
@@ -156,7 +156,7 @@ export default function HomePageClient() {
                 <div className="relative w-full max-w-[400px] aspect-[4/5] mx-auto rounded-[32px] md:rounded-[48px] overflow-hidden border-[8px] border-white/5 shadow-2xl group">
                   <Image
                     src={landmarks[0].image}
-                    alt="Study Abroad"
+                    alt="International University Campus - Wiseway Overseas"
                     fill
                     className="object-cover transition-transform duration-1000 group-hover:scale-110"
                     priority
@@ -174,7 +174,7 @@ export default function HomePageClient() {
                     <div className="w-10 h-10 rounded-full overflow-hidden relative border border-gold/50">
                       <Image
                         src="/images/uk.png"
-                        alt="UK"
+                        alt="Study in United Kingdom - Top Destination"
                         fill
                         className="object-cover"
                       />
@@ -256,7 +256,7 @@ export default function HomePageClient() {
               >
                 <Image
                   src={destination.image}
-                  alt={destination.name}
+                  alt={`Study Abroad in ${destination.name} - Professional Guidance`}
                   fill
                   className="object-cover transition-transform duration-700 lg:group-hover:scale-110"
                 />
