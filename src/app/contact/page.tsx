@@ -24,10 +24,10 @@ export default function ContactPage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     // Create a message with all the form data
     const message = `Hello, I would like to get in touch with Wiseway Overseas.%0A%0AName: ${formData.name}%0AEmail: ${formData.email}%0AMobile: ${formData.mobile}%0ADestination: ${formData.destination || 'Not specified'}%0AMessage: ${formData.message || 'No message provided'}`;
-    
+
     // Redirect to WhatsApp with the pre-filled message
     window.open(`https://wa.me/919666604038?text=${message}`, '_blank');
   };
@@ -35,7 +35,7 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen bg-white flex flex-col">
       <NavigationBar />
-      
+
       {/* Banner */}
       <div className="pt-32 pb-24 hero-gradient relative overflow-hidden">
         <div className="absolute inset-0 bg-secondary/10 blur-[100px] pointer-events-none"></div>
@@ -48,7 +48,7 @@ export default function ContactPage() {
       {/* Contact Section */}
       <div className="py-24 flex-grow bg-bg-light">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div 
+          <motion.div
             className="text-center mb-20"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -60,7 +60,7 @@ export default function ContactPage() {
               Ready to take the next step in your global education? Our expert counselors are here to provide personalized guidance and answer all your questions.
             </p>
           </motion.div>
-          
+
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             {/* Contact Information */}
             <motion.div
@@ -70,7 +70,7 @@ export default function ContactPage() {
               transition={{ duration: 0.6 }}
               className="space-y-12"
             >
-              <a 
+              <a
                 href="https://maps.app.goo.gl/ZLjW6M8HFbAEnQVm7?g_st=aw"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -92,9 +92,10 @@ export default function ContactPage() {
                   className="pointer-events-none"
                 ></iframe>
               </a>
-              
+
+
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <a 
+                <a
                   href="mailto:teamwiseway@gmail.com"
                   className="bg-white p-8 rounded-premium shadow-premium border border-gray-50 group hover:border-gold transition-all duration-300 block"
                 >
@@ -105,7 +106,7 @@ export default function ContactPage() {
                   <p className="text-gray-600">teamwiseway@gmail.com</p>
                 </a>
 
-                <a 
+                <a
                   href="tel:+919666604038"
                   className="bg-white p-8 rounded-premium shadow-premium border border-gray-50 group hover:border-gold transition-all duration-300 block"
                 >
@@ -117,7 +118,7 @@ export default function ContactPage() {
                 </a>
               </div>
             </motion.div>
-            
+
             {/* Contact Form */}
             <motion.div
               initial={{ opacity: 0, x: 30 }}
@@ -154,7 +155,7 @@ export default function ContactPage() {
                       />
                     </div>
                   </div>
-                  
+
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                       <label htmlFor="mobile" className="block text-primary font-bold text-sm uppercase tracking-wider mb-2">Mobile *</label>
@@ -187,7 +188,7 @@ export default function ContactPage() {
                       </select>
                     </div>
                   </div>
-                  
+
                   <div>
                     <label htmlFor="message" className="block text-primary font-bold text-sm uppercase tracking-wider mb-2">Message</label>
                     <textarea
@@ -199,7 +200,7 @@ export default function ContactPage() {
                       onChange={handleInputChange}
                     ></textarea>
                   </div>
-                  
+
                   <motion.button
                     type="submit"
                     className="btn-primary w-full py-5 text-lg shadow-xl shadow-gold/20"
@@ -214,7 +215,7 @@ export default function ContactPage() {
           </div>
         </div>
       </div>
-      
+
       <Footer />
     </div>
   );
