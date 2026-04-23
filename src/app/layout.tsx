@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     siteName: "Wiseway Overseas",
     images: [
       {
-        url: "/images/logo.jpeg",
+        url: "/images/logo2.jpeg",
         width: 1200,
         height: 630,
         alt: "Wiseway Overseas - Study Abroad Excellence"
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Wiseway Overseas - Study Abroad Made Simple",
     description: "India's premier study abroad consultancy. Expert-led admission and visa guidance.",
-    images: ["/images/logo.jpeg"],
+    images: ["/images/logo2.jpeg"],
   },
   verification: {
     google: "YOUR_GOOGLE_VERIFICATION_CODE", // User should update this
