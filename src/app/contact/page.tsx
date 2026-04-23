@@ -51,8 +51,7 @@ export default function ContactPage() {
           <motion.div
             className="text-center mb-20"
             initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">Get In Touch</h2>
@@ -63,20 +62,14 @@ export default function ContactPage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             {/* Contact Information */}
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="space-y-12"
-            >
+            <div className="space-y-12">
               <a
                 href="https://maps.app.goo.gl/ZLjW6M8HFbAEnQVm7?g_st=aw"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block relative group rounded-premium overflow-hidden shadow-premium border border-white h-[400px]"
               >
-                <div className="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-colors duration-300 z-10 flex items-center justify-center">
+                <div className="absolute inset-0 bg-primary/5 group-hover:bg-transparent transition-colors duration-300 z-10 flex items-center justify-center">
                   <div className="bg-white/90 px-6 py-3 rounded-full text-primary font-bold shadow-lg transform translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
                     View on Google Maps
                   </div>
@@ -87,7 +80,7 @@ export default function ContactPage() {
                   height="100%"
                   style={{ border: 0 }}
                   allowFullScreen
-                  loading="lazy"
+                  loading="eager"
                   referrerPolicy="no-referrer-when-downgrade"
                   className="pointer-events-none"
                 ></iframe>
@@ -117,15 +110,10 @@ export default function ContactPage() {
                   <p className="text-gray-600">+91 96666 04038</p>
                 </a>
               </div>
-            </motion.div>
+            </div>
 
             {/* Contact Form */}
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-            >
+            <div>
               <div className="bg-white rounded-premium shadow-premium p-10 border border-gray-50">
                 <h3 className="text-2xl font-bold text-primary mb-8">Send us a Message</h3>
                 <form className="space-y-6" onSubmit={handleSubmit}>
@@ -211,7 +199,7 @@ export default function ContactPage() {
                   </motion.button>
                 </form>
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
       </div>
